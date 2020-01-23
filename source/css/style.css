@@ -344,17 +344,6 @@
   width: 14px;
   height: 14px;
 }
-.header__low .header__low-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (max-width: 799px) {
-  .header__low .header__low-form {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 .header__low-favorite {
   position: relative;
   display: block;
@@ -371,7 +360,7 @@
             flex-grow: 1;
   }
 }
-.header__low-favorite b {
+.header__low-favorite span {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
@@ -399,6 +388,14 @@
           transform: rotate(0deg);
   outline: 1px solid red;
 }
+.header__low .header__low-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 .header__low-form input {
   width: 357px;
   height: 42px;
@@ -421,9 +418,7 @@
 }
 @media (max-width: 799px) {
   .header__low-form input {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    width: 100%;
   }
 }
 .header__low-magnifier {
@@ -1259,7 +1254,7 @@
   position: relative;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 9px;
+  margin-top: 11px;
   margin-left: 24px;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -1270,29 +1265,35 @@
   font-family: "Circe", "Arial", sans-serif;
   background-color: transparent;
   border: none;
-  border-bottom: 1.5px dashed #000000;
+  border-bottom: 1px dashed #000000;
   cursor: pointer;
-  outline: 1px solid red;
 }
 .product__favorite:hover {
   color: #ED6766;
   border-bottom: none;
 }
-.product__favorite product__favorite-empty {
+.product__favorite .product__favorite-empty {
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 2px;
+  left: -24px;
   width: 16px;
   height: 15px;
   fill: #2A2939;
 }
-.product__favorite product__favorite-full {
+.product__favorite:hover .product__favorite-empty {
+  fill: #ED6766;
+}
+.product__favorite .product__favorite-full {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -22.5px;
   width: 14px;
   height: 14px;
-  outline: 1px solid green;
+  display: none;
+}
+.product__favorite:hover .product__favorite-full {
+  display: block;
+  fill: #ED6766;
 }
 .product-right {
   display: -webkit-box;
