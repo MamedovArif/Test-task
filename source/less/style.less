@@ -1,0 +1,104 @@
+@font-face {
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Circe";
+  src: url("../fonts/circe-extrabold.woff2") format("woff2"),
+    url("../fonts/circe-extrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Circe";
+  src: url("../fonts/circe-bold.woff2") format("woff2"),
+    url("../fonts/circe-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Circe";
+  src: url("../fonts/circe-regular.woff2") format("woff2"),
+    url("../fonts/circe-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-extrabold.woff2") format("woff2"), url("../fonts/gilroy-extrabold.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-semibold.woff2") format("woff2"), url("../fonts/gilroy-semibold.woff") format("woff");
+}
+@font-face {
+  font-weight: 550;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy-medium.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-regularitalic.woff2") format("woff2"), url("../fonts/gilroy-regularitalic.woff") format("woff");
+}
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-light.woff2") format("woff2"), url("../fonts/gilroy-light.woff") format("woff");
+}
+
+@import "header.less";
+@import "navigation.less";
+@import "index-main.less";
+@import "slider.less";
+@import "popular-goods.less";
+@import "index-form.less";
+@import "sales-hits.less";
+@import "product.less";
+@import "footer.less";
+@import "social.less";
+@import "button.less";
+@import "visually-hidden.less";
+@import "variables.less";
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  font-weight: regular;
+  font-family: "Circe", "Arial", sans-serif;
+  text-transform: none;
+  color: #2A2939;
+/*
+  background-image: url("../img/substrate/main.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+*/
+}
+a {
+  color: #2A2939;
+  text-decoration: none;
+}

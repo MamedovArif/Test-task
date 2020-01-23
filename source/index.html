@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>3D ФОТООБОИ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div style="display: none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
+
+    <header class="header">
+      <section class="header__high">
+        <p class="header__high-location"><svg width="12" height="16"><use xlink:href="#icon-location"></use></svg>Ваш город <button type="button">Нижний Новгород</button></p>
+        <button class="header__high-tel" type="button"><img src="img/phone.png" width="17" height="17" alt="svg">8 800 300 61 25</button>
+        <ul class="header__high-social social">
+          <li><a class="social__link social__link--fb" href="https://www.facebook.com/messenger"><span class="visually-hidden">Мы в Фейсбуке</span><svg width="16" height="16"><use xlink:href="#icon-fb"></use></svg></a></li>
+          <li><a class="social__link social__link--whatsapp" href="https://web.whatsapp.com/"><span class="visually-hidden">Мы в Вотсапе</span><svg class="social__link--whatsapp-into" width="7" height="6"><use xlink:href="#icon-whatsapp"></use></svg><svg class="social__link--whatsapp-wrap" width="14" height="14"><use xlink:href="#icon-whatsapp-wrap"></use></svg></a></li>
+          <li><a class="social__link social__link--viber" href="https://www.viber.com/ru/"><span class="visually-hidden">Мы в Вайбере</span><svg class="social__link--viber-into" width="8" height="7"><use xlink:href="#icon-viber"></use></svg><svg class="social__link--viber-wrap" width="14" height="14"><use xlink:href="#icon-viber-wrap"></use></svg></a></li>
+        </ul>
+        <button class="header__high-call button">ОБРАТНЫЙ ЗВОНОК</button>
+      </section>
+      <div class="header__middle-wrapper">
+        <section class="header__middle">
+          <a class="header__middle-logo"><img src="img/logo.png" width="199" height="35" alt="Логотип ФОТООБОИ HD"></a>
+          <nav class="header__middle navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="gluing.html">ПОКЛЕЙКА</a></li>
+              <li class="navigation__item"><a  href="price.html">ЦЕНЫ И МАТЕРИАЛЫ</a></li>
+              <li class="navigation__item"><a href="delivery">ДОСТАВКА И ОПЛАТА</a></li>
+              <li class="navigation__item"><a  href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <section class="header__low">
+        <a class="header__low-catalog" href="catalog.html">каталог фотообоев</a>
+        <button class="header__low-loading" type="button">загрузить свое фото<svg width="14" height="14"><use xlink:href="#icon-load"></use></svg></button>
+        <a class="header__low-favorite" href="favotite.html"><svg width="14" height="14"><use xlink:href="#icon-favorite"></use></svg><span>избранное</span></a>
+        <form class="header__low-form" method="get" action="https://daimax-digital.ru/">
+          <label for="search"></label><input id="search" name="search" type="text" placeholder="Искать">
+          <p class="header__low-magnifier"></p>
+        </form>
+      </section>
+    </header>
+
+    <main class="index-main">
+      <h1 class="visually-hidden">3D ФОТООБОИ</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">3D ФОТООБОИ НА ЗАКАЗ</h2>
+        <div class="slider__main">
+          <picture>
+
+            <!--<source type="image/webp" srcset="img/slide.webp">-->
+            <source media="(min-width: 1200px)" srcset="img/slide.png">
+            <source media="(min-width: 800px)" srcset="img/slide-tablet.png">
+            <img src="img/slide-mobile.png" alt="Интерьер">
+          </picture>
+          <button class="slider__main-btn1" type="button">
+            <svg class="slider__main-right" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
+          </button>
+          <button class="slider__main-btn2" type="button">
+            <svg class="slider__main-left" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
+          </button>
+        </div>
+        <div class="slider__control">
+          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="first" checked>
+          <label class="slider__control-label slider__control-label--btn1" for="first"></label>
+          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="second">
+          <label class="slider__control-label" for="second"></label>
+          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="third">
+          <label class="slider__control-label" for="third"></label>
+          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="fourth">
+          <label class="slider__control-label" for="fourth"></label>
+        </div>
+      </section>
+      <section class="popular-goods">
+        <h2>ПОПУЛЯРНЫЕ КАТЕГОРИИ ТОВАРОВ</h2>
+        <ul class="popular-goods__list">
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop1.png">
+              <img src="img/pop1-mobile.png" width="320" height="199" alt="3D ФОТООБОИ, АБСТРАКТ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">3D ФОТООБОИ, АБСТРАКТ</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop2.png">
+              <img src="img/pop2-mobile.png" width="320" height="199" alt="ДЛЯ ДЕТЕЙ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ДЛЯ ДЕТЕЙ</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop3.png">
+              <img src="img/pop3-mobile.png" width="320" height="199" alt="ЦВЕТЫ И РАСТЕНИЯ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ЦВЕТЫ И РАСТЕНИЯ</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop4.png">
+              <img src="img/pop4-mobile.png" width="320" height="199" alt="ГОРОДА МИРА">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ГОРОДА МИРА</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop5.png">
+              <img src="img/pop5-mobile.png" width="320" height="199" alt="ГОРОДСКИЕ ПЕЙЗАЖИ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ГОРОДСКИЕ ПЕЙЗАЖИ</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop6.png">
+              <img src="img/pop6-mobile.png" width="320" height="199" alt="БАЛКОНЫ, ТЕРРАСЫ, ВЕРАНДЫ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">БАЛКОНЫ, ТЕРРАСЫ, ВЕРАНДЫ</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop7.png">
+              <img src="img/pop7-mobile.png" width="320" height="199" alt="БАЛКОНЫ, ТЕРРАСЫ, ВЕРАНДЫ">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ПРИРОДА</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop8.png">
+              <img src="img/pop8-mobile.png" width="320" height="199" alt="МОРСКАЯ ТЕМА">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">МОРСКАЯ ТЕМА</a></h3>
+          </li>
+          <li class="popular-goods__item">
+            <picture>
+              <source media="(min-width: 800px)" srcset="img/pop9.png">
+              <img src="img/pop9-mobile.png" width="320" height="199" alt="ВСЕЛЕННАЯ, КОСМОС">
+            </picture>
+            <h3><a class="popular-goods__link" href="popular.html">ВСЕЛЕННАЯ, КОСМОС</a></h3>
+          </li>
+        </ul>
+      </section>
+      <section class="index-form">
+        <div class="index-form__container">
+          <h2 class="index-form__title">ХОТИТЕ ПОДОБРАТЬ <b>ФОТООБОИ?</b></h2>
+          <p class="index-form__instruction">Заполните форму и наши дизайнеры подберут для вас подходящий эскиз!</p>
+          <form class="index-form__main" action="https://daimax-digital.ru/" method="post">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+            <label for="tel">Телефон</label>
+            <input id="tel" name="tel" type="tel" placeholder="+7(___)___-__-__">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="user@usermail.ru">
+            <button class="index-form__application" type="submit">Отправить заявку<svg width="28" height="16"><use xlink:href="#icon-arrow"></use></svg></button>
+          </form>
+          <svg class="index-form__container-mowed" width="105" height="570">
+            <polygon points="0,570 0,0 105,0 7,570" fill="#4A599C"/>
+          </svg>
+          <svg class="index-form__container-mowedtabl" width="105" height="500">
+            <polygon points="0,500 0,0 105,0 7,500" fill="#4A599C"/>
+          </svg>
+        </div>
+      </section>
+      <section class="sales-hits">
+        <h2>ХИТЫ ПРОДАЖ</h2>
+        <ul class="sales-hits__list">
+          <li class="sales-hits__item product">
+            <svg class="product__polygon" width="100" height="40">
+            <polygon points="0,0 100,0 75,40 0,40" fill="#FF3636"/>
+            </svg>
+            <b>- 70%</b>
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit1.png">
+              <img src="img/hit1-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1--red">270 р/м <sup>2</sup></span><span class="product__price2"><span>900 Р/М </span><sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <svg class="product__polygon" width="100" height="40">
+            <polygon points="0,0 100,0 75,40 0,40" fill="#FF3636"/>
+            </svg>
+            <b>- 70%</b>
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit2.png">
+              <img src="img/hit2-mobile.png" width="173" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1--red">270 р/м <sup>2</sup></span><span class="product__price2"><span>900 Р/М </span><sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <svg class="product__polygon" width="100" height="40">
+            <polygon points="0,0 100,0 75,40 0,40" fill="#FF3636"/>
+            </svg>
+            <b>- 70%</b>
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit3.png">
+              <img src="img/hit3-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1--red">270 р/м <sup>2</sup></span><span class="product__price2"><span>900 Р/М </span><sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed" href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit4.png">
+              <img src="img/hit4-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit5.png">
+              <img src="img/hit5-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit6.png">
+              <img src="img/hit6-mobile.png" width="123" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit7.png">
+              <img src="img/hit7-mobile.png" width="174" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit8.png">
+              <img src="img/hit8-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit9.png">
+              <img src="img/hit9-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit10.png">
+              <img src="img/hit10-mobile.png" width="165" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed"  href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit11.png">
+              <img src="img/hit11-mobile.png" width="124" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed" href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="sales-hits__item product">
+            <picture class="product__img-wrapper">
+              <source media="(min-width: 800px)" srcset="img/hit12.png">
+              <img src="img/hit12-mobile.png" width="320" height="212" alt="3D ШАРЫ И ОДУВАНЧИКИ">
+            </picture>
+            <div class="product__low">
+              <div class="product__left">
+                <h4>3D ШАРЫ И ОДУВАНЧИКИ</h4>
+                <p class="product__price"><span class="product__price1">290 р/м <sup>2</sup></span></p>
+                <button class="product__favorite" type="button">
+                <svg class="product__favorite-empty" width="16" height="15"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="product__favorite-full" width="14" height="14"><use xlink:href="#icon-favorite"></use></svg>В избранное</button>
+              </div>
+              <div class="product-right">
+                <p class="product__data"><a href="stereoscopic.html">Стереоскопические </a>Арт. №hd1495101</p>
+                <a class="product__detailed" href="catalog.html"><img src="../img/eye.png" width="18" height="10" alt="eye">Подробнее</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="sales-hits__link button" href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__high">
+        <section class="footer__logo">
+          <a href="index.html"><img src="img/logo.png" width="165" height="29" alt="Логотип ФОТООБОИ HD"></a>
+          <p class="footer__description">Интернет магазин Фотообои HD – печать гладких и фактурных обоев<br> с доставкой в любой регион,<br> бесшовные фотообои на стену, фрески</p>
+        </section>
+        <nav class="footer__catalog">
+          <h3><a href="catalog.html">Каталог</a></h3>
+          <div class="footer__catalog-main">
+            <ul class="footer__catalog-list1">
+              <li class="footer__catalog-item"><a href="catalog.html">3D фотообои, абстракт</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Для детей</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Цветы и растения</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Города мира</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Городские пейзажи</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Балконы, террасы, веранды</a></li>
+            </ul>
+            <ul class="footer__catalog-list2">
+              <li class="footer__catalog-item"><a href="catalog.html">Природа</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Сады и парки</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Закаты и рассветы</a></li>
+              <li class="footer__catalog-item"><a href="catalog.html">Морская тема</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer__information">
+          <h3>Информация</h3>
+          <ul class="footer__information-list">
+            <li class="footer__information-item"><a href="information.html">Доставка и оплата</a></li>
+            <li class="footer__information-item"><a href="information.html">Дилерам</a></li>
+            <li class="footer__information-item"><a href="information.html">Материалы и цены</a></li>
+            <li class="footer__information-item"><a href="information.html">Примеры работ</a></li>
+            <li class="footer__information-item"><a href="information.html">Контакты</a></li>
+            <li class="footer__information-item"><a href="information.html">Правовые документы</a></li>
+          </ul>
+        </nav>
+        <section class="footer__contacts">
+          <h3 class="visually-hidden">Контакты</h3>
+          <p class="footer__contacts-tel">8 499 229 97 70</p>
+          <button class="footer__contacts-button button" type="button">ОБРАТНЫЙ ЗВОНОК</button>
+          <ul class="footer__social">
+            <li><a class="footer__link footer__link--whatsapp" href="https://web.whatsapp.com/"><span class="visually-hidden">Мы в Вотсапе</span><svg class="footer__link--whatsapp-into" width="12" height="10"><use xlink:href="#icon-whatsapp"></use></svg><svg class="footer__link--whatsapp-wrap" width="24" height="24"><use xlink:href="#icon-whatsapp-wrap"></use></svg></a></li>
+            <li><a class="footer__link footer__link--viber" href="https://www.viber.com/ru/"><span class="visually-hidden">Мы в Вайбере</span><svg class="footer__link--viber-into" width="12" height="11"><use xlink:href="#icon-viber"></use></svg><svg class="footer__link--viber-wrap" width="24" height="24"><use xlink:href="#icon-viber-wrap"></use></svg></a></li>
+          </ul>
+          <p class="footer__contacts-email">info@fotooboi-hd.ru</p>
+          <p class="footer__contacts-location">г. Москва, Дмитровское шоссе, д. 100 стр. 2</p>
+        </section>
+      </div>
+      <div class="footer__copyright-wrapper"><section class="footer__copyright"><p>&copy; 2011-2019. Все права защищены.</p></section></div>
+    </footer>
+  </body>
+</html>

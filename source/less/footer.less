@@ -1,0 +1,362 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 487px;
+  width: 100%;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+.footer__high {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 435px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    width: 800px;
+  }
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid orange;
+}
+.footer__logo a {
+  margin-top: 50px;
+  outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 25px;
+  }
+}
+.footer__description {
+  width: 165px;
+  margin-top: 21px;
+
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2939;
+
+  outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+  }
+
+}
+.footer__catalog {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+
+  outline: 1px solid black;
+
+  @media (max-width: @tablet-width-only) {
+    order: 1;
+    margin-left: 0;
+    flex-grow: 1;
+  }
+  @media (max-width: @mobile-width-only) {
+    order: 0;
+  }
+
+}
+
+.footer__catalog h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  outline: 1px solid red;
+
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 25px;
+
+  @media (max-width: @tablet-width-only) {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px auto;
+    margin-bottom: 0;
+  }
+}
+.footer__catalog-main {
+  display: flex;
+  margin-top: 25px;
+
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 22px;
+  color: green;
+
+  @media (max-width: @tablet-width-only) {
+    flex-direction: column;
+  }
+
+}
+.footer__catalog-list1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 165px;
+
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__catalog-item {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: underline;
+
+  @media (max-width: @tablet-width-only) {
+    margin-right: 30px;
+  }
+}
+.footer__catalog-item a {
+  padding-bottom: 2px;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+.footer__catalog-list2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 165px;
+  padding-left: 27px;
+
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+
+  outline: 1px solid orange;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.footer__information h3 {
+  margin: 0;
+  margin-top: 50px;
+
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 25px;
+  outline: 1px solid orange;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 20px;
+  }
+}
+.footer__information-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  margin-left: 2px;
+
+  width: 262px;
+  min-height: 228px;
+
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 22px;
+}
+.footer__information-item {
+  margin-bottom: 20px;
+
+  text-decoration: underline;
+}
+
+.footer__contacts {
+  width: 262px;
+  margin-left: 28px;
+  outline: 1px solid blue;
+
+  @media (max-width: @tablet-width-only) {
+    margin-left: auto;
+  }
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
+}
+.footer__contacts-tel {
+  margin: 0;
+  margin-top: 52px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2A2939;
+
+  outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 21px;
+  }
+}
+.footer__contacts-button {
+  max-width: 262px;
+  margin-top: 21px;
+  padding: 15px 44px 13px 44px;
+  box-sizing: border-box;
+
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  outline: 1px solid red;
+
+  cursor: pointer;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 21px;
+    margin-left: 10px;
+  }
+}
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -1px;
+  display: flex;
+  margin-top: 30px;
+
+  outline: 1px solid red;
+}
+.footer__social li {
+  margin-right: 14px;
+}
+.footer__link {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.footer__link--whatsapp {
+  background-color: #1BD741;
+}
+.footer__link--whatsapp-into {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+}
+.footer__link--whatsapp-wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.footer__link--viber {
+  background-color: #7D3DAF;
+}
+.footer__link--viber-into {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.footer__link--viber-wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.footer__contacts-email {
+  margin-top: 31px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: underline;
+
+  outline: 1px solid red;
+}
+.footer__contacts-location {
+  width: 229px;
+
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Circe", "Arial", sans-serif;
+
+  outline: 1px solid red;
+}
+
+.footer__copyright-wrapper {
+  width: 100%;
+  min-height: 52px;
+
+  background-color: #F0F2FB;
+  outline: 1px solid red;
+}
+.footer__copyright {
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: -2px;
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    width: 800px;
+  }
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+  }
+}
+.footer__copyright p {
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  outline: 1px solid black;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 20px;
+  }
+}

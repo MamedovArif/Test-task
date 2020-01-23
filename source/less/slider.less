@@ -1,0 +1,151 @@
+.slider {
+  min-height: 480px;
+  width: 1140px;
+  margin: 0 auto;
+
+  outline: 1px solid green;
+
+  @media (max-width: @tablet-width-only) {
+    width: 800px;
+    min-height: 350px;
+  }
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    min-height: 140px;
+  }
+}
+.slider__main {
+  position: relative;
+}
+.slider img {
+  outline: 1px solid red;
+}
+.slider__main-btn1 {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+  top: 171px;
+  right: 30px;
+
+  border: none;
+  background-color: transparent;
+
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    top: 120px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    top: 45px;
+    width: 12px;
+    height: 12px;
+  }
+}
+.slider__main-btn2 {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+  top: 171px;
+  left: 30px;
+
+  border: none;
+  background-color: transparent;
+
+  outline: 1px solid red;
+
+  @media (max-width: @tablet-width-only) {
+    top: 120px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    top: 45px;
+    width: 12px;
+    height: 12px;
+  }
+}
+.slider__main-right {
+  width: 20px;
+  height: 32px;
+  transform: rotate(180deg);
+  fill: #2A2939;
+
+  @media (max-width: @mobile-width-only) {
+    width: 7.5px;
+    height: 12px;
+  }
+}
+.slider__main-right:hover {
+  fill: #ED6766;
+}
+.slider__main-left {
+  width: 20px;
+  height: 32px;
+  fill: #2A2939;
+
+  @media (max-width: @mobile-width-only) {
+    width: 7.5px;
+    height: 12px;
+  }
+}
+.slider__main-left:hover {
+  fill: #ED6766;
+}
+
+.slider__control {
+  display: flex;
+  width: 160px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) {
+    width: 80px;
+    margin-top: 0;
+  }
+}
+
+.slider__control-label {
+  position: relative;
+
+  margin-right: 24px;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9796A3;
+
+  @media (max-width: @mobile-width-only) {
+    width: 5px;
+    height: 5px;
+    margin-right: 12px;
+  }
+}
+.slider__control-label--btn1 {
+  margin-left: 24px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 12px;
+  }
+}
+.slider__control-input:checked + .slider__control-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #2A2939;
+
+  @media (max-width: @mobile-width-only) {
+    width: 5px;
+    height: 5px;
+  }
+}
+
