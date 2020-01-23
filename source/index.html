@@ -57,26 +57,30 @@
           <picture>
 
             <!--<source type="image/webp" srcset="img/slide.webp">-->
-            <source media="(min-width: 1200px)" srcset="img/slide.png">
-            <source media="(min-width: 800px)" srcset="img/slide-tablet.png">
-            <img src="img/slide-mobile.png" alt="Интерьер">
+            <source class="slider__main1200" media="(min-width: 1200px)" srcset="img/slide.png">
+            <source class="slider__main800" media="(min-width: 800px)" srcset="img/slide-tablet.png">
+            <img  class="slider__main-full-photo" src="img/pop4-mobile.png" alt="Интерьер">
           </picture>
-          <button class="slider__main-btn1" type="button">
-            <svg class="slider__main-right" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
+          <button class="slider__main-right" type="button">
+            <svg class="slider__main-arrow-right" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
           </button>
-          <button class="slider__main-btn2" type="button">
-            <svg class="slider__main-left" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
+          <button class="slider__main-left" type="button">
+            <svg class="slider__main-arrow-left" width="20" height="32"><use xlink:href="#icon-left"></use></svg>
           </button>
         </div>
         <div class="slider__control">
-          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="first" checked>
-          <label class="slider__control-label slider__control-label--btn1" for="first"></label>
-          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="second">
-          <label class="slider__control-label" for="second"></label>
-          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="third">
-          <label class="slider__control-label" for="third"></label>
-          <input class="slider__control-input visually-hidden" name="slide" type="radio" id="fourth">
-          <label class="slider__control-label" for="fourth"></label>
+          <button class="slider__main-btn" type="button">
+            <span class="slider__main-btn-into"></span>
+          </button>
+          <button class="slider__main-btn" type="button">
+            <span class="slider__main-btn-into"></span>
+          </button>
+          <button class="slider__main-btn" type="button">
+            <span class="slider__main-btn-into"></span>
+          </button>
+          <button class="slider__main-btn" type="button">
+            <span class="slider__main-btn-into"></span>
+          </button>
         </div>
       </section>
       <section class="popular-goods">
@@ -466,5 +470,7 @@
       </div>
       <div class="footer__copyright-wrapper"><section class="footer__copyright"><p>&copy; 2011-2019. Все права защищены.</p></section></div>
     </footer>
+
+    <script src="js/slide.js"></script>
   </body>
 </html>
